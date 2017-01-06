@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yeo.practice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:screenOrientation="landscape"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".basic_practice.Final_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".basic_practice.Initial_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".menu.Menu_alphabet"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_Final_consonant"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_Initial_Consonant"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_number"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_Sentence_marks"
+            android:screenOrientation="landscape"
+            android:label=""/>
+
+        <service
+            android:name=".menu.Menu_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".menu.Menu_Tutorial"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_Vowel"
+            android:screenOrientation="landscape"
+            android:label=""/>
+
+        <service
+            android:name=".basic_practice.Num_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".sound.Number"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".basic_practice.Sentence_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".sound.slied"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".basic_practice.Vowel_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Display_Practice.Braille_short_practice"
+            android:screenOrientation="landscape"
+            android:label=""/>
+
+        <service
+            android:name=".basic_practice.alphabet_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".menu.Menu_basic_practice"
+            android:screenOrientation="landscape"
+            android:label=" "/>
+        <activity android:name=".menu.Menu_master_practice"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_quiz"
+            android:screenOrientation="landscape"
+            android:label=""/>
+
+        <service
+            android:name=".menu.Menu_main_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".basic_practice.abbreviation_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".menu.Menu_detail_contents"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".menu.Menu_abbreviation"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_letter"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_word"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".Display_Practice.Braille_long_practice"
+            android:screenOrientation="landscape"
+            android:label=""/>
+
+        <service
+            android:name=".master_practice.Letter_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".master_practice.Word_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".menu.Menu_master_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".menu.Menu_quiz_initial"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_quiz_vowel"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_quiz_final"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_quiz_number"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_quiz_alphabet"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_quiz_sentence"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_quiz_abbreviation"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_quiz_letter"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_quiz_word"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".Display_Practice.Quiz_Braille_reading_short_practice"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".Display_Practice.Quiz_Braille_reading_long_practice"
+            android:screenOrientation="landscape"
+            android:label=""/>
+
+        <service
+            android:name=".quiz.quiz_initial_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".quiz.quiz_vowel_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".quiz.quiz_final_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".quiz.quiz_number_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".quiz.quiz_alphabet_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".menu.quiz_menu_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".quiz.quiz_sentence_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".quiz.quiz_abbreviation_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".tutorial.Tutorial"
+            android:screenOrientation="landscape"
+            android:label=""/>
+
+        <service
+            android:name=".tutorial.Tutorial_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".tutorial.Tutorial_tutorial"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".tutorial.Tutorial_basic_practice"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".tutorial.Tutorial_master_practice"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".tutorial.Tutorial_quiz"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".tutorial.Tutorial_basic_init"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".tutorial.Tutorial_basic_vowel"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".tutorial.Tutorial_basic_final"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".tutorial.Tutorial_basic_number"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".tutorial.Tutorial_basic_english"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".tutorial.Tutorial_basic_sentence"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".tutorial.Tutorial_basic_abbreviation"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".tutorial.Tutorial_dot_practice"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".tutorial.Tutorial_dot_lecture"
+            android:screenOrientation="landscape"
+            android:label=""/>
+
+        <service
+            android:name=".quiz.quiz_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".quiz.score_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".quiz.quiz_reading_manual"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".quiz.quiz_score"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_Mynote"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_Mynote_basic"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_Mynote_master"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_quiz_reading"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".menu.Menu_quiz_writing"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".quiz.quiz_writing_manual"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".Display_Practice.Quiz_Braille_writing_short_practice2"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".Display_Practice.Quiz_Braille_writing_short_practice"
+            android:screenOrientation="landscape"
+            android:label=""/>
+        <activity android:name=".Display_Practice.Quiz_Braille_writing_long_practice"
+            android:screenOrientation="landscape"
+            android:label=""/>
+    </application>
+
+</manifest>
